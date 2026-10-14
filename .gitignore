@@ -1,0 +1,90 @@
+# Dependencies & Package Managers
+/node_modules
+/.pnp
+.pnp.*
+pnpm-lock.yaml
+yarn.lock
+!package-lock.json
+
+# Environment Variables, API Keys & Secrets
+.env
+.env*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.staging
+.env.vault
+!.env.example
+*.key
+*.pem
+*.cert
+*.crt
+*.pfx
+*.p12
+credentials.json
+serviceAccountKey.json
+service-account*.json
+firebase-adminsdk*.json
+*.secret
+*.secrets
+
+# Next.js Build Output
+/.next/
+/out/
+/build
+/dist/
+.turbo
+.swc/
+
+# TypeScript & Cache
+*.tsbuildinfo
+next-env.d.ts
+
+# Testing & Coverage
+/coverage
+*.lcov
+.nyc_output
+
+# Debug & Runtime Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Deployment & Hosting
+.vercel
+
+# Editor & IDE Configs
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swo
+*.swp
+*~
+.cursor/
+.windsurf/
+.zed/
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Temporary & Backup Files
+*.tmp
+*.temp
+*.bak
