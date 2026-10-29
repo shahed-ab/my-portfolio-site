@@ -27,19 +27,32 @@ const credentialIconMap = {
 export function Education() {
   const { education, credentials } = profileData;
   const hasCredentials = credentials && credentials.length > 0;
-  const primaryEdu = education[0];
+  const primaryEdu = education && education.length > 0 ? education[0] : null;
+
+  if (!primaryEdu && !hasCredentials) {
+    return null;
+  }
+
+  const sectionIcon = primaryEdu ? (
+    <GraduationCap className="w-4 h-4" />
+  ) : (
+    <Award className="w-4 h-4" />
+  );
+
+  const sectionTitle = primaryEdu
+    ? hasCredentials
+      ? "Education & Credentials"
+      : "Education & Degree"
+    : "Certifications & Credentials";
 
   return (
     <section id="education" className="pt-2">
-      <SectionHeading
-        icon={<GraduationCap className="w-4 h-4" />}
-        title="Education & Credentials"
-      />
+      <SectionHeading icon={sectionIcon} title={sectionTitle} />
 
       <div
         className={cn(
           "grid grid-cols-1 gap-6",
-          hasCredentials ? "lg:grid-cols-2" : "grid-cols-1"
+          primaryEdu && hasCredentials ? "lg:grid-cols-2" : "grid-cols-1"
         )}
       >
         {/* Left Card: Formal Degree */}
@@ -87,7 +100,13 @@ export function Education() {
                 Certified Credentials
               </h3>
 
-              <div className="space-y-3">
+              <div
+                className={cn(
+                  primaryEdu
+                    ? "space-y-3"
+                    : "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5"
+                )}
+              >
                 {credentials.map((cred) => {
                   const Icon = credentialIconMap[cred.icon] || Award;
 

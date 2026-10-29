@@ -285,19 +285,6 @@ export const profileData: ProfileData = {
 
   experience: [
     {
-      id: "exp-1",
-      role: "Senior Full-Stack Engineer",
-      company: "[CloudScale SaaS]", // [Company placeholder]
-      locationMode: "Remote / Hybrid",
-      period: "2022 — Present",
-      bullets: [
-        "Architected core transition to modular micro-frontends with Next.js and GraphQL, reducing initial load latency by 42% and trimming client bundle overhead.",
-        "Engineered automated multi-tenant billing & subscription service handling Stripe webhooks with zero sync dropped transactions across 12,000+ monthly active seats.",
-        "Spearheaded generative AI copilot integration, orchestrating token cache systems that suppressed OpenAI inference expenses by 38%.",
-      ],
-      skills: ["Next.js", "GraphQL", "TypeScript", "Stripe Webhooks", "Redis"],
-    },
-    {
       id: "exp-2",
       role: "Full-Stack Developer",
       company: "[DevTech Labs]", // [Company placeholder]
@@ -357,15 +344,7 @@ export const profileData: ProfileData = {
     ],
   },
 
-  education: [
-    {
-      degree: "B.Sc. in Computer Science & Engineering",
-      institution: "[University of Asia Pacific]", // [Institution placeholder]
-      status: "Graduated",
-      description: "Focused on Distributed Systems, Advanced Algorithms, Database Internal Mechanisms, and Object-Oriented Software Design. Awarded Dean's Honor Roll for academic excellence in computer systems architecture.",
-      honor: "Dean's Honor List Recognition",
-    },
-  ],
+  education: [],
 
   credentials: [
     {
