@@ -87,7 +87,7 @@ export interface ProjectItem {
   description: string;
   tags: string[];
   image: string;
-  liveUrl: string;
+  liveUrl?: string;
   liveLabel?: string;
   sourceUrl: string;
   sourceLabel?: string;
@@ -165,6 +165,7 @@ export interface ProfileData {
   collaboration: CollaborationInfo;
   languages: LanguageItem[];
   projects: ProjectItem[];
+  moreProjects?: ProjectItem[];
   experience: ExperienceItem[];
   skills: SkillsConfig;
   education: EducationItem[];

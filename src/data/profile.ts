@@ -283,6 +283,94 @@ export const profileData: ProfileData = {
     },
   ],
 
+  moreProjects: [
+    {
+      id: "bangla-news-24",
+      title: "Bangla News 24 (বাংলা নিউজ ২৪)",
+      description: "A modern, visually polished Bengali online news platform.",
+      tags: ["Next.js 16 (App Router)", "React 19", "TypeScript", "Tailwind CSS v4", "daisyUI 5", "Better Auth"],
+      image: "/projects/bangla-news-24.png", // Drop real screenshot at /public/projects/bangla-news-24.png
+      liveUrl: "https://banglanews-tau.vercel.app/",
+      liveLabel: "Live Demo",
+      sourceUrl: "https://github.com/shahed-ab/Bangla-news-24-7",
+      sourceLabel: "Source Code",
+    },
+    {
+      id: "naming-helper",
+      title: "Naming Helper (VS Code Extension)",
+      badge: "VS Code Extension",
+      description: "Scans JavaScript and TypeScript files in real time, detects weak placeholder names (like x, temp, data2, res), infers what each variable represents, suggests clearer names, and explains why in beginner-friendly language.",
+      tags: ["TypeScript", "AST parsing", "VS Code Extension API", "esbuild", "pnpm"],
+      image: "/projects/naming-helper.png", // Drop real screenshot at /public/projects/naming-helper.png
+      sourceUrl: "https://github.com/shahed-ab/naming-Helper-Extention",
+      sourceLabel: "Source Code",
+    },
+    {
+      id: "studiospace",
+      title: "StudioSpace",
+      description: "A peer-to-peer marketplace where creators discover, book, and host photo studios, film stages, podcast lounges, music suites, and art workshops by the hour.",
+      tags: ["Next.js", "TypeScript", "Tailwind CSS", "Better Auth", "MongoDB", "Google sign-in", "PDF booking invoices"],
+      image: "/projects/studiospace.png", // Drop real screenshot at /public/projects/studiospace.png
+      liveUrl: "https://studiospace-client-iycx.vercel.app/",
+      liveLabel: "Live Demo",
+      sourceUrl: "https://github.com/shahed-ab/studiospace-client",
+      sourceLabel: "Source Code",
+    },
+    {
+      id: "full-stack-spy",
+      title: "FullStackSpy",
+      description: "A fast, secure website tech stack detector. Given any public URL, it inspects headers, HTML metadata, scripts, cookies, and DNS records to detect frameworks, CMSs, hosting, CDNs, and analytics tools. Includes 70+ fingerprints, SSRF protection, confidence scoring, caching, and rate limiting.",
+      tags: ["Next.js 14", "TypeScript", "Tailwind CSS", "Cheerio"],
+      image: "/projects/full-stack-spy.png", // Drop real screenshot at /public/projects/full-stack-spy.png
+      sourceUrl: "https://github.com/shahed-ab/full-stack-spy",
+      sourceLabel: "Source Code",
+    },
+    {
+      id: "bazar-dor",
+      title: "BazarDor (বাজার দর)",
+      description: "A modern, responsive full-stack app that tracks and displays daily market prices of essential commodities and groceries across Bangladesh.",
+      tags: ["Next.js", "TypeScript", "Better Auth", "MongoDB"],
+      image: "/projects/bazar-dor.png", // Drop real screenshot at /public/projects/bazar-dor.png
+      liveUrl: "https://bazar-dor-web-two.vercel.app/",
+      liveLabel: "Live Demo",
+      sourceUrl: "https://github.com/shahed-ab/bazar-dor-web",
+      sourceLabel: "Source Code",
+    },
+    {
+      id: "fitlog",
+      title: "FitLog",
+      description: "A production-grade, dark-themed workout library and daily training plan builder for lifters who prioritize precision and intent.",
+      tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+      image: "/projects/fitlog.png", // Drop real screenshot at /public/projects/fitlog.png
+      liveUrl: "https://fitlog-shah-a974.vercel.app",
+      liveLabel: "Live Demo",
+      sourceUrl: "https://github.com/shahed-ab/fitlog",
+      sourceLabel: "Source Code",
+    },
+    {
+      id: "devstack",
+      title: "DevStack",
+      description: "A responsive web app that helps developers explore modern web technologies and build their own personalized tech stack.",
+      tags: ["React", "Vite", "Tailwind CSS"],
+      image: "/projects/devstack.png", // Drop real screenshot at /public/projects/devstack.png
+      liveUrl: "https://ph-assignment-5-alpha.vercel.app",
+      liveLabel: "Live Demo",
+      sourceUrl: "https://github.com/shahed-ab/DevStack",
+      sourceLabel: "Source Code",
+    },
+    {
+      id: "keypress-typing-speed-test",
+      title: "Keypress Typing Speed Test",
+      description: "A browser-based typing speed test with live WPM and accuracy, character-level feedback, an animated keycap caret, and timed modes (15s / 30s / 60s / 120s).",
+      tags: ["HTML", "CSS", "JavaScript (no frameworks)"],
+      image: "/projects/keypress-typing-speed-test.png", // Drop real screenshot at /public/projects/keypress-typing-speed-test.png
+      liveUrl: "https://shahed-ab.github.io/typingspeedtest/",
+      liveLabel: "Live Demo",
+      sourceUrl: "https://github.com/shahed-ab/typingspeedtest",
+      sourceLabel: "Source Code",
+    },
+  ],
+
   experience: [
     {
       id: "exp-2",
