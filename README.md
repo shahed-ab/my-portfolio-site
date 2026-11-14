@@ -76,7 +76,6 @@ All content across the entire portfolio is centralized and strongly typed in [`/
 | **Stats** | `stats` | Metric labels, count-up numbers, suffixes, descriptions, accent flags |
 | **About** | `about`, `location`, `collaboration`, `languages` | Engineering philosophy, Dhaka timezone, remote overlap chips, fluency bars with speech samples |
 | **Projects** | `projects` | Case study titles, 16:9 thumbnails, tags, live URLs, repository links |
-| **Experience** | `experience` | Roles, companies, hybrid/remote mode, date range, achievement bullets |
 | **Arsenal** | `skills` | Categories, skill items, percentages, display mode (`"percent"` or `"level"`) |
 | **Education** | `education`, `credentials` | Degree, honors, certified credentials |
 | **Contact** | `contact`, `socials` | Email address, response time SLA, optional PGP key, GitHub/LinkedIn links |

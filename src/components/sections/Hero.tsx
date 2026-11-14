@@ -136,10 +136,18 @@ export function Hero() {
             <div className="flex items-center gap-1.5">
               <Briefcase className="w-4 h-4 text-[var(--accent)] shrink-0" />
               <span>
-                {identity.role} at{" "}
-                <span className="font-semibold text-[var(--text)]">
-                  {identity.company}
-                </span>
+                {identity.company ? (
+                  <>
+                    {identity.role} at{" "}
+                    <span className="font-semibold text-[var(--text)]">
+                      {identity.company}
+                    </span>
+                  </>
+                ) : (
+                  <span className="font-semibold text-[var(--text)]">
+                    {identity.role}
+                  </span>
+                )}
               </span>
             </div>
 

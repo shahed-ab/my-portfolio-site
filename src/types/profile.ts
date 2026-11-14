@@ -2,7 +2,7 @@ export interface ProfileIdentity {
   name: string;
   shortName: string;
   role: string;
-  company: string;
+  company?: string;
   tagline: string;
   location: string;
   timezone: string;
@@ -93,16 +93,6 @@ export interface ProjectItem {
   sourceLabel?: string;
 }
 
-export interface ExperienceItem {
-  id: string;
-  role: string;
-  company: string;
-  locationMode: string;
-  period: string;
-  bullets: string[];
-  skills: string[];
-}
-
 export type SkillDisplayMode = "percent" | "level";
 
 export interface SkillItem {
@@ -166,7 +156,6 @@ export interface ProfileData {
   languages: LanguageItem[];
   projects: ProjectItem[];
   moreProjects?: ProjectItem[];
-  experience: ExperienceItem[];
   skills: SkillsConfig;
   education: EducationItem[];
   credentials: CredentialItem[];

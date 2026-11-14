@@ -14,7 +14,7 @@ interface NavItem {
 const navItems: NavItem[] = [
   { id: "profile", label: "Profile", icon: User },
   { id: "projects", label: "Projects", icon: Folder },
-  { id: "experience", label: "Experience", icon: Terminal },
+  { id: "skills", label: "Skills", icon: Terminal },
   { id: "contact", label: "Contact", icon: Mail },
 ];
 
@@ -23,7 +23,7 @@ export function MobileNav() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["profile", "about", "projects", "experience", "skills", "education", "contact"];
+      const sections = ["profile", "about", "projects", "skills", "education", "contact"];
       const scrollPos = window.scrollY + 200;
 
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -33,8 +33,8 @@ export function MobileNav() {
             setActiveSection("profile");
           } else if (sections[i] === "projects") {
             setActiveSection("projects");
-          } else if (sections[i] === "experience" || sections[i] === "skills" || sections[i] === "education") {
-            setActiveSection("experience");
+          } else if (sections[i] === "skills" || sections[i] === "education") {
+            setActiveSection("skills");
           } else if (sections[i] === "contact") {
             setActiveSection("contact");
           }

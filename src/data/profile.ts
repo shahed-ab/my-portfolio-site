@@ -5,7 +5,7 @@ export const profileData: ProfileData = {
     name: "Abu Shahed",
     shortName: "Abu Shahed",
     role: "Full-Stack Engineer",
-    company: "[DevTech Labs]", // TODO: Replace with current or target company
+    company: "",
     tagline: "Automate work. Build systems. Scale faster.",
     location: "Dhaka, Bangladesh",
     timezone: "Asia/Dhaka",
@@ -368,22 +368,6 @@ export const profileData: ProfileData = {
       liveLabel: "Live Demo",
       sourceUrl: "https://github.com/shahed-ab/typingspeedtest",
       sourceLabel: "Source Code",
-    },
-  ],
-
-  experience: [
-    {
-      id: "exp-2",
-      role: "Full-Stack Developer",
-      company: "[DevTech Labs]", // [Company placeholder]
-      locationMode: "Dhaka, Bangladesh",
-      period: "2020 — 2022",
-      bullets: [
-        "Delivered high-throughput logistics monitoring dashboards utilizing React, Redux Toolkit, and Node.js microservices with WebSocket telemetry updates.",
-        "Refactored legacy MongoDB aggregation pipelines and normalized compound indexes, cutting complex report computation runtimes from 35s down to 3.8s.",
-        "Implemented automated CI/CD staging runs via GitHub Actions, establishing zero-downtime blue/green Docker container rollouts.",
-      ],
-      skills: ["React", "Node.js", "Express", "MongoDB", "Docker"],
     },
   ],
 

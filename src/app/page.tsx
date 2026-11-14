@@ -2,7 +2,6 @@ import { Hero } from "@/components/sections/Hero";
 import { Stats } from "@/components/sections/Stats";
 import { About } from "@/components/sections/About";
 import { Projects } from "@/components/sections/Projects";
-import { Experience } from "@/components/sections/Experience";
 import { Arsenal } from "@/components/sections/Arsenal";
 import { Education } from "@/components/sections/Education";
 import { Contact } from "@/components/sections/Contact";
@@ -45,7 +44,6 @@ export default function Home() {
       <Stats />
       <About />
       <Projects />
-      <Experience />
       <Arsenal />
       <Education />
       <Contact />
