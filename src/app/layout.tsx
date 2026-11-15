@@ -7,6 +7,7 @@ import { LeftRail } from "@/components/layout/LeftRail";
 import { MobileNav } from "@/components/layout/MobileNav";
 import { TopBar } from "@/components/layout/TopBar";
 import { profileData } from "@/data/profile";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -83,6 +84,7 @@ export default function RootLayout({
           {/* Mobile Bottom Navigation */}
           <MobileNav />
         </ThemeProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
